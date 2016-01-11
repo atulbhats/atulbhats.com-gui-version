@@ -1,0 +1,391 @@
+/* 
+
+base blue: #54759e;
+light blue: #d7dee6;
+*/
+body{
+	margin:0;
+	font-family:Roboto,segoe ui, sans-serif;
+	font-size: 16px;
+	background-color: #d7dee6;
+	position: relative;
+	height: 100%;
+}
+
+.container{
+	margin: 0;
+	padding: 0;
+}
+
+#header{
+	position: fixed;
+	top:0;
+	color:#fff;
+	left: 0;
+	width: 100%;
+	box-sizing:border-box;
+	background-color: #54759e;
+}
+
+	#header,
+	.type-window{
+		z-index: 100;
+	}
+
+	.chat-window{
+		z-index: 99;
+	}
+
+	#header .dp,
+	#header .contact{
+		display: inline-block;
+	}
+
+		#header .dp img{
+		    max-width: 4em;
+		    max-height: 4em;
+		    border-radius: 50%;
+		    margin-left: 2em;
+		    padding: 0.5em;
+		}
+
+	#header .contact{
+		vertical-align: top;
+		margin-top:0.2em;
+	}
+
+		#header .contact h2,
+		#header .contact p{
+			margin:0;
+			font-weight:400;
+		}
+
+	#header .options{
+		float: right;
+		padding-right:2em;
+	}
+
+		#header .options button{
+			font-size: 6px;
+			background-color:transparent; 
+			height:100%;
+			padding:3em;
+			border:none;
+			outline: none;
+			height: 64px;
+    		width: 64px;
+    		border-radius: 50%;
+		}
+
+		#header .options button:active{
+			background-color: rgba(0,0,0,0.4);
+		}
+
+		#header .options .fa-circle{
+			display: block;
+			margin:2px auto;
+			width: 8px;
+			height:8px;
+			background-image: url('../img/dot.png');
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+
+		#header .options .dropdown-menu li a{
+		    padding: 0.5em 1em;
+		    font-size: 16px;
+		}
+
+		#header .options .dropdown-menu {
+		    border-radius: 0;
+		}
+
+.chat-window{
+	vertical-align: bottom;
+	background-color: #d7dee6;
+	background-image: url('../img/chat.jpg');
+	background-repeat: repeat;
+	background-size: contain;
+	position: absolute;
+	width: 100%;
+	padding-top:70px;
+	background-attachment: fixed;
+}
+
+.type-window{
+	position: fixed;
+	bottom:0;
+	left: 0;
+	width: 100%;
+	background-color: #fff;
+	box-sizing:border-box;
+	color:#999;
+}
+
+	.type-window > .btn-group-justified:first-child{
+		padding:10px 20px;
+	}
+
+	.type-window .message{
+		border: none;
+		font-size: 20px;
+		outline:none;
+		width: 80%;
+		box-sizing:border-box; 
+		resize:none;
+		display:inline-block;
+		height:1.5em;
+		cursor: pointer;
+		margin:0.5em 1em;
+	}
+
+	.type-window .buttonholder{
+		display: inline-block;
+		height:1.5em;
+	}
+
+	.type-window .send{
+		float:right;
+		background-image: url('../img/send.png');
+		height:32px;
+		box-sizing:border-box;
+		width: 32px;
+		background-color: transparent;
+		outline:none;
+		border:none; 
+		cursor:pointer;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: center center;
+		margin:15px 5px;
+		position: relative;
+		top:-15px;	
+		padding:0px 10px;	
+	}
+
+.chat-window noscript{
+	vertical-align: bottom;
+}
+
+.chat-window .ping{
+	display: block;
+	clear:both;
+	position: relative;
+	line-height: 1.5;
+}
+	.chat-window .ping b{
+		font-weight: 500;
+	}
+
+	.chat-window .ping .other {
+	    display: inline-block;
+	    bottom: 10px;
+	    right: 10px;
+	    float: right;
+	    width: 95px;
+	    margin: 5px 10px;
+	    text-align: right;
+	    height: 100%;
+	    vertical-align: top;
+	}
+
+		.chat-window .ping .other .fa-check{
+			width: 16px;
+			height:16px;
+			background-image: url('../img/fa-check.png');
+			background-repeat: no-repeat;
+			background-position: center center;
+			display: inline-block;
+			vertical-align: top;
+		}
+
+	.chat-window .ping .ping-in{
+		background-color: #fff;
+		border-radius:4px; 
+		max-width: 80%;
+		min-width: 100px;
+		position: relative;
+		display: inline-block;
+		float:left;
+		margin:5px 10px;
+		padding:10px;
+		border-bottom:2px solid #bbbac0;
+	}
+
+		.chat-window .ping .ping-in .timestamp{
+			color:#a0accf;
+			vertical-align: top;
+			font-size: 80%;
+		}
+
+	.chat-window .ping .ping-out{
+		background-color: #effdde;
+		max-width: 80%;
+		border-radius:4px; 
+		position: relative;
+		display: inline-block;
+		min-width: 145px;
+		min-height:3.5em;
+		float:right;
+		margin:5px 10px;
+		padding:10px;
+		border-bottom:2px solid #99c5b2;
+	}
+
+		.chat-window .ping .ping-out .timestamp{
+			color:#6cc264;
+			font-size: 80%;
+		}
+
+		.chat-window .ping .ping-out .fa-check{
+			color:#6cc264;
+			font-weight: lighter;
+			font-size: 13px;
+		}
+
+		.chat-window .ping .ping-out .fa-check:nth-child(2){
+			visibility: hidden;
+			position: relative;
+			left:10px;
+		}
+
+	.chat-window .ping .message-content{
+		padding:0.5em;
+		
+		padding-bottom:50px;
+	}
+
+.chat-window .ping-img{
+	clear:both;
+}
+
+	.chat-window .ping-img .ping-in{
+		background-color: #fff;
+		border-radius:4px; 
+		max-width: 80%;
+		position: relative;
+		display: inline-block;
+		float:left;
+		margin:5px 10px;
+		padding:3px;
+		border-bottom:2px solid #bbbac0;
+	}
+
+		.chat-window .ping-img .ping-in .other {
+		    position: absolute;
+		    bottom: 10px;
+		    right: 10px;
+		    background: rgba(0,0,0,0.4);
+		    font-size: 80%;
+		    color: #fff;
+		    padding: 1px 5px;
+		}
+
+	.chat-window .ping-img img {
+	    max-width: 400px;
+	    -webkit-filter: blur(10px);
+	    -o-filter: blur(10px);
+	    -moz-filter: blur(10px);
+	    filter: blur(10px);
+	}
+
+.modal .modal-header,
+.modal button{
+	background-color: #54759e;
+	color:#fff;
+}
+
+.modal td{
+	padding:0.5em 1em;
+	vertical-align: top;
+}
+
+	.modal td b{
+		color: #54759e;
+	}
+
+.modal tr{
+	border-bottom:1px solid #aaa;
+}
+
+.emoji{
+	width: 24px;
+	height:24px;
+	display: inline-block;
+	background-position: center center;
+	background-size: contain;
+	vertical-align: bottom;
+}
+
+	.emoji-tongue{
+		background-image:url('../img/emoji-tongue.png');
+	}
+
+	.emoji-spock{
+		background-image:url('../img/emoji-spock.png');
+	}
+
+	.emoji-messed{
+		background-image:url('../img/emoji-messed.png');
+	}
+
+	.emoji-smile{
+		background-image:url('../img/emoji-smile.png');
+	}
+
+	.emoji-success{
+		background-image:url('../img/emoji-success.png');
+	}
+
+	.emoji-doubt{
+		background-image:url('../img/emoji-doubt.png');
+	}
+
+	.emoji-uncertain{
+		background-image:url('../img/emoji-uncertain.png');
+	}
+
+	.emoji-upset{
+		background-image:url('../img/emoji-upset.png');
+	}
+
+	.emoji-excited{
+		background-image:url('../img/emoji-excited.png');
+	}
+
+	.emoji-bye{
+		background-image:url('../img/emoji-bye.png');
+	}
+
+	.emoji-cry{
+		background-image:url('../img/emoji-cry.png');
+	}
+
+
+@media only screen and (max-width:600px){
+
+	#header .dp img{
+		margin-left:5px;
+	}
+
+	#header .contact{
+		margin-top:0.55em;
+	}
+	
+	#header .contact h2{
+		font-size:24px;
+	}
+
+	#header .options .fa-circle{
+		width:5px;
+		height:5px;
+		background-size: 100%;
+	}
+
+	#header .options{
+		padding:0;
+	}
+
+
+
+}
