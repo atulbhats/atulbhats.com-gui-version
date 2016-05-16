@@ -112,7 +112,6 @@ $ip=$_SERVER['REMOTE_ADDR'];
 		      		<table>
 						<tr><td colspan='2'>Use these Identifiers as pings.</td></tr>
 						<tr><td><b>bio</b></td><td>Displays my bio</td></tr>
-						<tr><td><b>dob</b></td><td>Hints my Date of Birth</td></tr>
 						<tr><td><b>facebook</b></td><td>Gives a link to my facebook profile. <b>fb</b> will also work</td></tr>
 						<tr><td><b>twitter</b></td><td>Gives a link to my twitter profile. <b>tw</b> will also work</td></tr>
 						<tr><td><b>instagram</b></td><td>Gives a link to my instagram photos. <b>ig</b> will also work</td></tr>
@@ -120,9 +119,6 @@ $ip=$_SERVER['REMOTE_ADDR'];
 						<tr><td><b>email</b></td><td>Displays Email Address</td></tr>
 						<tr><td><b>ping</b></td><td>Guides you through the process to send me a message.<b>send message</b> will also work</td></tr>
 						<tr><td><b>pic</b></td><td>For Those of you who haven't met me, This command gives you an image of me.</td></tr>
-						<tr><td><b>terminal</b></td><td>Takes you to a webpage with terminal interface</td></tr>
-						<tr><td><b>projects</b></td><td>Opens AtulBhatS Projects Page.</td></tr>
-						<tr><td><b>physics</b></td><td> To know my interest in physics (<b>phy</b> command will also work).</td></tr>
 						<tr><td><b>exit</b></td><td>Exits Chat.</td></tr>
 					</table>
 		      </div>

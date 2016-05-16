@@ -93,16 +93,12 @@ $(document).ready(function(){
 	$help="<table>"+
 		"<tr><td colspan='2'>Use these Identifiers as pings.</td></tr>"+
 		"<tr><td><b>bio</b></td><td>Displays my bio</td></tr>"+
-		"<tr><td><b>blog</b></td><td>Gives a link to my blog. </td></tr>"+
-		"<tr><td><b>captures</b></td><td>Gives a link to my photography page. <b>photography</b> will also work</td></tr>"+
 		"<tr><td><b>facebook</b></td><td>Gives a link to my facebook profile. <b>fb</b> will also work</td></tr>"+
 		"<tr><td><b>twitter</b></td><td>Gives a link to my twitter profile. <b>tw</b> will also work</td></tr>"+
 		"<tr><td><b>instagram</b></td><td>Gives a link to my instagram photos. <b>ig</b> will also work</td></tr>"+
 		"<tr><td><b>linkedin</b></td><td>Gives a link to my linkedin profile. <b>in</b> will also work</td></tr>"+
 		"<tr><td><b>email</b></td><td>Displays Email Address</td></tr>"+
 		"<tr><td><b>ping</b></td><td>Guides you through the process to send me a message.<b>send message</b> will also work</td></tr>"+
-		"<tr><td><b>pic</b></td><td>For Those of you who haven't met me, This command gives you an image of me.</td></tr>"+
-		"<tr><td><b>terminal</b></td><td>Takes you to a webpage with terminal interface</td></tr>"+
 		"<tr><td><b>exit</b></td><td>Exits Chat.</td></tr>"+
 		"</table>";
 

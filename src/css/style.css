@@ -201,6 +201,10 @@ body{
 			vertical-align: top;
 		}
 
+		.chat-window .ping .other .fa-check:before{
+			content:none;
+		}
+		
 	.chat-window .ping .ping-in{
 		background-color: #fff;
 		border-radius:4px; 
